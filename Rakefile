@@ -4,7 +4,8 @@ require 'fileutils'
 
 task :daily do |t|
   FileUtils.mkdir_p 'daily'
-  `cd daily && wget --mirror --accept "*.sdf.gz,killed-SIDs,killed-CIDs" --wait 1 ftp://ftp.ncbi.nlm.nih.gov/pubchem/{Compound,Substance}/Daily/`
+  `cd daily && wget --mirror --accept "*.sdf.gz,killed-SIDs,killed-CIDs" --wait 1 ftp://ftp.ncbi.nlm.nih.gov/pubchem/Compound/Daily/`
+  `cd daily && wget --mirror --accept "*.sdf.gz,killed-SIDs,killed-CIDs" --wait 1 ftp://ftp.ncbi.nlm.nih.gov/pubchem/Substance/Daily/`
 end
 
 task :full do |t|
