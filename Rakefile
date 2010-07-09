@@ -9,5 +9,6 @@ end
 
 task :full do |t|
   FileUtils.mkdir_p 'full'
-  `cd full && wget --mirror --accept \"*.sdf.gz\" ftp://ftp.ncbi.nlm.nih.gov/pubchem/{Substance,Compound}/CURRENT-Full/SDF/`
+  `cd full && wget --mirror --accept \"*.sdf.gz\" ftp://ftp.ncbi.nlm.nih.gov/pubchem/{Substance}/CURRENT-Full/SDF/`
+  `cd full && wget --mirror --accept \"*.sdf.gz\" ftp://ftp.ncbi.nlm.nih.gov/pubchem/{Compound}/CURRENT-Full/SDF/`
 end
