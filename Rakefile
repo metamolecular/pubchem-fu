@@ -1,3 +1,4 @@
+# PubChem Fu: PubChem Utilities
 # Copyright (c) 2010 Metamolecular, LLC
 # http://metamolecular.com
 # 
