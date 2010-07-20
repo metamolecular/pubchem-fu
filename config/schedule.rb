@@ -19,8 +19,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# the path to where the daily and full data will be stored
 set :path, '~/local/pubchem'
 
+# pick a time that works for you
 every 1.day, :at => "12:00am" do
   rake "daily"
 end
